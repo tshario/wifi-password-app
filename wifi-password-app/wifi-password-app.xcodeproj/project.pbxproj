@@ -11,9 +11,12 @@
 		44251A901FAECD8E00BE3482 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44251A8F1FAECD8E00BE3482 /* Assets.xcassets */; };
 		44251A931FAECD8E00BE3482 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44251A911FAECD8E00BE3482 /* MainMenu.xib */; };
 		44251A961FAECD8E00BE3482 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44251A951FAECD8E00BE3482 /* main.m */; };
+		822A641E174834860179AD7C /* libPods-wifi-password-app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C970FECEB723DB0A521F98E /* libPods-wifi-password-app.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		01EAAF0EDB9B8EDC9AB94B45 /* Pods-wifi-password-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wifi-password-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-wifi-password-app/Pods-wifi-password-app.debug.xcconfig"; sourceTree = "<group>"; };
+		3C970FECEB723DB0A521F98E /* libPods-wifi-password-app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-wifi-password-app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44251A891FAECD8E00BE3482 /* wifi-password-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "wifi-password-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		44251A8C1FAECD8E00BE3482 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		44251A8D1FAECD8E00BE3482 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		44251A941FAECD8E00BE3482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44251A951FAECD8E00BE3482 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44251A971FAECD8E00BE3482 /* wifi_password_app.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = wifi_password_app.entitlements; sourceTree = "<group>"; };
+		97B5A5D3C789719DBBF55B02 /* Pods-wifi-password-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-wifi-password-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-wifi-password-app/Pods-wifi-password-app.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				822A641E174834860179AD7C /* libPods-wifi-password-app.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				44251A8B1FAECD8E00BE3482 /* wifi-password-app */,
 				44251A8A1FAECD8E00BE3482 /* Products */,
+				814025BADF9983BE0E86D6D8 /* Pods */,
+				9ADB59B8613C23BEC56EEDCF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +72,23 @@
 			path = "wifi-password-app";
 			sourceTree = "<group>";
 		};
+		814025BADF9983BE0E86D6D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01EAAF0EDB9B8EDC9AB94B45 /* Pods-wifi-password-app.debug.xcconfig */,
+				97B5A5D3C789719DBBF55B02 /* Pods-wifi-password-app.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9ADB59B8613C23BEC56EEDCF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C970FECEB723DB0A521F98E /* libPods-wifi-password-app.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -72,9 +96,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 44251A9A1FAECD8E00BE3482 /* Build configuration list for PBXNativeTarget "wifi-password-app" */;
 			buildPhases = (
+				B415628DB848A5269B4A8CDE /* [CP] Check Pods Manifest.lock */,
 				44251A851FAECD8E00BE3482 /* Sources */,
 				44251A861FAECD8E00BE3482 /* Frameworks */,
 				44251A871FAECD8E00BE3482 /* Resources */,
+				D4E4F409A7CF5A07246C025A /* [CP] Embed Pods Frameworks */,
+				489B1B856907F35C5D242042 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		489B1B856907F35C5D242042 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-wifi-password-app/Pods-wifi-password-app-resources.sh",
+				"${PODS_ROOT}/SAMKeychain/Support/SAMKeychain.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wifi-password-app/Pods-wifi-password-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B415628DB848A5269B4A8CDE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-wifi-password-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4E4F409A7CF5A07246C025A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-wifi-password-app/Pods-wifi-password-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		44251A851FAECD8E00BE3482 /* Sources */ = {
@@ -259,6 +340,7 @@
 		};
 		44251A9B1FAECD8E00BE3482 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01EAAF0EDB9B8EDC9AB94B45 /* Pods-wifi-password-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "wifi-password-app/wifi_password_app.entitlements";
@@ -274,6 +356,7 @@
 		};
 		44251A9C1FAECD8E00BE3482 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B5A5D3C789719DBBF55B02 /* Pods-wifi-password-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "wifi-password-app/wifi_password_app.entitlements";
