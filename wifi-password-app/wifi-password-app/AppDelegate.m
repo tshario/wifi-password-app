@@ -20,8 +20,6 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    self.window.styleMask = NSTitledWindowMask | NSClosableWindowMask | NSMiniaturizableWindowMask;
-    
     CWInterface *wifi = [[CWWiFiClient sharedWiFiClient] interface];
     NSString *account = wifi.ssid;
     NSString *service = @"AirPort";
